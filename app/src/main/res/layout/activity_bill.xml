@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".billActivity">
+
+
+    <RelativeLayout
+        android:layout_width= "match_parent"
+        android:layout_height= "300dp"
+        android:id ="@+id/header">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BILL"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/cream"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:id="@+id/textv1"></TextView>
+
+    <EditText
+        android:id="@+id/billQr"
+        android:ems="10"
+        android:hint="Qr code/serial number"
+        android:inputType="number"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
+        android:background="@drawable/custominput"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="100dp"
+        android:textSize="20sp"
+        android:textColorHint="#2196F3"
+        android:fontFamily="sans-serif-condensed-medium"/> />
+
+    <Button
+        android:id="@+id/billScann"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="ScanQr"
+        android:layout_marginTop="170dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:backgroundTint="#673AB7"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_button"
+        />
+    <Button
+        android:id="@+id/billAdd"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:layout_marginTop="230dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:backgroundTint="#673AB7"
+        android:background="@drawable/round_button"
+        />
+
+    ></RelativeLayout>
+    <ListView
+    android:id="@+id/item_list"
+    android:layout_width="match_parent"
+    android:layout_marginTop="320dp"
+    android:background="@drawable/round_button"
+    android:layout_height="wrap_content" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/billDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Total ₹"
+        android:textColor="#E91E63"
+        android:textColorHighlight="@android:color/primary_text_dark"
+        android:gravity="center_horizontal"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:textSize="30dp"/>
+    </RelativeLayout>
